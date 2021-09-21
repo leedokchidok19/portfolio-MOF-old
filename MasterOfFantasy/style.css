@@ -111,6 +111,30 @@ ul {
 .customer {
     margin: 0 auto;
 }
+.customer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.customer span {
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #7F7F7F, #A6A6A6);
+    padding: 0.125rem 0.25rem;
+    position: absolute;
+    display: inline-block;
+    bottom: 12px;
+    width: 30%;
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+}
+.customer .inquiry {
+    left: 24px;
+}
+.customer .bug__reporting {
+    right: 28px;
+}
 /*main-menu*/
 /*main-content*/
 .content {
@@ -125,6 +149,7 @@ ul {
 .screen__title,
 .fan__title {
     border-bottom: var(--board-border);
+    margin: 0 0.25rem;
     padding: 0.25rem 0.125rem;
     display: flex;
     justify-content: space-between;
@@ -243,6 +268,7 @@ ul {
 .board .event__title,
 .board .more__btn {
     background: #C8BB90;
+    padding: 0 0.125rem;
 }
 .board .event__title {
     font-weight: bold;
@@ -270,20 +296,91 @@ ul {
 .participate {
     background: #EEEEEE;
     padding: 0.725rem;
+    width: 63%;
+    max-width: 100%;
 }
 .participate > div {
+    margin-bottom: 0.275rem;
     display: flex;
+    flex-direction: column;
     color: white;
 }
-.participate__title {
+.participate > div > div:last-child {
+    color: #747474;
+}
+.novel__content {
+    background: url(images/main/main_right_bg1_mid1.gif);
+}
+.novel__title,
+.tbb__title,
+.survey__title {
     border-radius: 4px;
     background: #A2A2A2;
+    margin-bottom: 0.25rem;
     padding: 0.25rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-size: 0.725rem;
 }
+.content__title {
+    color: #AD6335;
+    font-weight: bold;
+}
+.content__desc {
+    padding: 3rem 0.5rem 0;
+    width: 100%;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.tbb__title,
+.survey__title {
+    margin: 0.5rem 0;
+}
+.tbb__content {
+    display: flex;
+    flex-direction: column;
+}
+.tbb__content ul {
+    background: white;
+    margin: 0;
+}
+.tbb__content ul li {
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.survey__content {
+    background: white;
+    color: #906335 !important;
+}
+.survey__content > b {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.participate__btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 50%;
+    color: #606060;
+    font-size: 0.625rem;
+    font-weight: bold;
+}
+.participate__btn > span {
+    color: red;
+}
+
     /*participate*/
 /*main-etc*/
 /*main*/
