@@ -309,7 +309,7 @@ ul {
     color: #747474;
 }
 .novel__content {
-    background: url(images/main/main_right_bg1_mid1.gif);
+    background: url(images/main/main_right_bg1_mid1.gif) no-repeat;
 }
 .novel__title,
 .tbb__title,
